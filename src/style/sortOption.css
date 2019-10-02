@@ -1,0 +1,17 @@
+.dropdown{ 
+    background-color: rgb(57, 201, 201);
+    width: 100%;
+}
+
+#drdr{
+ margin-right: 10%;
+ float: right;
+}
+#drd-left{
+    float: left;
+    margin-left: 10%;
+}
+#drd-left-1{
+    float: left;
+    margin-left: 1%;
+}
