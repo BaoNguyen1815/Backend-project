@@ -29,18 +29,18 @@ export default class Register extends Component {
         }
         if (this.state.match) {
             axios({
-                url: "http://localhost:6969/api/user",
+                url: "http://curnonwatch-api.herokuapp.com/api/user",
                 method: "POST",
                 data
             })
-            .then((response) => {
-                console.log(response);
-                //response.redirect("/login");
-                window.location.href="/login";
-            })
-            .catch((error) => {
-                console.log(error);
-            })
+                .then((response) => {
+                    console.log(response);
+                    //response.redirect("/login");
+                    window.location.href = "/login";
+                })
+                .catch((error) => {
+                    console.log(error);
+                })
         }
         console.log(data);
     }

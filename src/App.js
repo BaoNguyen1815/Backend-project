@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   _onLogin = (username, password) => {
-    axios.post("http://localhost:6969/api/auth/login",
+    axios.post("http://curnonwatch-api.herokuapp.com/api/auth/login",
       {
         username: username,
         password: password

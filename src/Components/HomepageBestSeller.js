@@ -7,7 +7,7 @@ export default class HomepageBestSeller extends Component {
         products: [],
     }
     componentDidMount() {
-        axios.get('http://localhost:6969/api/product/Nam/bestSeller').then(data => {
+        axios.get('http://curnonwatch-api.herokuapp.com/api/product/Nam/bestSeller').then(data => {
             this.setState({
                 products: data.data.data,
             })

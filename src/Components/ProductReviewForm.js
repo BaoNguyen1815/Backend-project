@@ -25,7 +25,7 @@ class ProductReviewForm extends Component {
         console.log(event.target.title.value);
         console.log(event.target.body.value);
         axios({
-            url: 'http://localhost:6969/api/comment',
+            url: 'http://curnonwatch-api.herokuapp.com/api/comment',
             method: 'POST',
             data: {
                 user: userID,

@@ -16,7 +16,7 @@ export default class Table extends Component {
     submitData = () => {
         axios({
             method: 'post',
-            url: 'http://localhost:6969/api/bill',
+            url: 'http://curnonwatch-api.herokuapp.com/api/bill',
             data: {
                 list_product: JSON.parse(localStorage.getItem("cartcurnor")),
                 user: this.props.id,
@@ -67,16 +67,16 @@ export default class Table extends Component {
             })
         }
         else {
-            return(
+            return (
                 <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
             )
-            
+
         }
 
     }
