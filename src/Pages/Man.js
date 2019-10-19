@@ -87,6 +87,7 @@ export default class Man extends Component {
                 <Header onSearchChanged = {this._onSearchChanged}/>
                 <Banner/>
                 <SortDropbox onSort = {this._onSort} quantityDisplayed = {this.state.quantityDisplayed}/>
+                <hr></hr>
                 <ManProductDisplay  products = {displayedProducts}/>
                 <FootBanner/>
                 <Footer/>

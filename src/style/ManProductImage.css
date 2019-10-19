@@ -14,5 +14,25 @@ h4{
    
 }
 
+hr{
+    height : 16px;
+    clear: both;
+}
+
+.abc{
+    width: 48% !important;
+    float: right !important;
+    text-align: center;
+}
+.xyz{
+    width: 48% !important;
+    float: left !important;
+    text-align: center;
+   
+}
+.a{
+    padding: 0 !important;
+}
+
 
 

@@ -1,0 +1,100 @@
+@media (max-width: 767px) .product-single__reviews .spr-reviews>.spr-review {
+    padding: 15px 15px 30px !important;
+}
+
+@media (max-width: 767px) .product-single__reviews .spr-reviews>.spr-review {
+    width: 100%;
+}
+
+.product-single__reviews .spr-reviews>.spr-review {
+    width: calc(25% - 16px);
+    flex: 0 0 auto;
+}
+
+.spr-review:first-child {
+    margin-top: 24px;
+}
+
+.product-single__reviews .spr-review {
+    padding: 25px 25px 30px !important;
+    background: #f8f8f8;
+    margin: 8px !important;
+    outline: none;
+    position: relative;
+    border-top: none;
+}
+
+.spr-review,
+.spr-form {
+    border-color: #ECECEC;
+    
+}
+
+.spr-review {
+    padding: 24px 0;
+    border-top: 1px solid #DFDFDF;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: #f8f8f8;
+}
+
+.spr-review-header-byline {
+    font-style: italic;
+    font-size: 13px;
+    opacity: 0.5;
+    display: inline-block;
+    margin: 0 0 1em 0;
+}
+
+@media (max-width: 767px) .product-single__reviews .spr-review-header-title {
+    letter-spacing: 0;
+}
+
+.product-single__reviews .spr-review-header-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    font-weight: 500;
+}
+
+.spr-review-header-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.product-single__reviews .spr-review-content-body {
+    font-size: 13px;
+    letter-spacing: 0.25px;
+    line-height: 26px;
+}
+
+.spr-review-content-body {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.spr-review-reportreview {
+    float: right;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.product-single__reviews .spr-pagination {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 25px 0;
+    margin-top: 20px;
+}
+
+.spr-pagination {
+    text-align: center;
+    padding: 12px 0 0 0;
+    position: relative;
+    border-top: 1px solid #DFDFDF;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

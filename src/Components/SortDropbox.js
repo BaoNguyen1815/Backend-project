@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {DropDownList} from "@progress/kendo-react-dropdowns";
-import  "../style/sortOption.css"
+import { DropDownList } from "@progress/kendo-react-dropdowns";
+import "../style/sortOption.css"
 export default class SortDropbox extends Component {
-    state ={
-        value : { text: 'Fearture', id: 0 }
+    state = {
+        value: { text: 'Fearture', id: 0 }
     };
-    options = 
+    options =
         [
             { text: 'Alphabetical,A->Z', id: 1 },
             { text: 'Alphabetical,Z->A', id: 2 },
@@ -19,30 +19,30 @@ export default class SortDropbox extends Component {
         });
         console.log(event.target.value.id);
         this.props.onSort(event.target.value.id);
-        
-        }
+
+    }
 
     render() {
         return (
             <div className="dropdown">
                 <div >
-                    <span id = "drd-left">Sort by  </span>
-                <button id = "drd-left-1" className="btn-default">
-                    <DropDownList                   
-                    data={this.options}
-                    textField="text"
-                    dataItemKey="id"
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                /></button>
-                 <span id = "drdr">{this.props.quantityDisplayed} sản phẩm</span>
+                    <span id="drd-left">Sort by  </span>
+                    <button id="drd-left-1" className="btn-light">
+                        <DropDownList className="drd-list"
+                            data={this.options}
+                            textField="text"
+                            dataItemKey="id"
+                            value={this.state.value}
+                            onChange={this.handleChange}
+                        /></button>
+                    <span id="drdr">{this.props.quantityDisplayed} sản phẩm</span>
 
                 </div>
-                
-            
+
+
             </div>
         )
-        
+
     }
 }
 

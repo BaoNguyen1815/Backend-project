@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ManProductImage from './ManProductImage'
-export default class ManProductImages extends Component {
+export default class ManProductDisplay extends Component {
     
     render() {
         const allImages = this.props.products.map(product => (

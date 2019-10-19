@@ -1,0 +1,30 @@
+.tbl_img{
+    max-height: 120px !important;
+    max-width: 120px !important;
+    float: left;
+}
+.name{
+    float: left;
+}
+.PostData{
+    margin: 3% 10% ;
+   float: right;
+   clear: both;
+}
+.totalText1{
+    color: coral;
+    font-weight: bold;
+    size: 22px;
+    margin-right: 10% !important; 
+    float: right;
+    clear: both;
+}
+.totalText2{
+    font-weight: bold;
+    size: 22px;
+    margin-right: 10% !important; 
+    margin-bottom: 3%; 
+    float: right;
+    clear: both;
+}
+
