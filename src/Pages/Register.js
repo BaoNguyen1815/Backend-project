@@ -29,7 +29,7 @@ export default class Register extends Component {
         }
         if (this.state.match) {
             axios({
-                url: "http://curnonwatch-api.herokuapp.com/api/user",
+                url: "https://curnonwatch-api.herokuapp.com/api/user",
                 method: "POST",
                 data
             })

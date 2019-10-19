@@ -21,7 +21,7 @@ export default class Man extends Component {
 
     componentDidMount() {
 
-        axios.get("http://curnonwatch-api.herokuapp.com/api/product")
+        axios.get("https://curnonwatch-api.herokuapp.com/api/product")
             .then(data => {
                 this.setState({
                     products: data.data.data,
@@ -34,7 +34,7 @@ export default class Man extends Component {
     componentDidUpdate(prevState) {
         if (this.state.sortOption !== prevState.sortOption) {
             if (this.state.sortOption === 1) {
-                axios.get("http://curnonwatch-api.herokuapp.com/api/product/Nam/sortByAlphabet/1")
+                axios.get("https://curnonwatch-api.herokuapp.com/api/product/Nam/sortByAlphabet/1")
                     .then(data => {
                         this.setState({
                             products: data.data.data,
@@ -44,7 +44,7 @@ export default class Man extends Component {
         }
 
         if (this.state.sortOption === 2) {
-            axios.get("http://curnonwatch-api.herokuapp.com/api/product/Nam/sortByAlphabet/-1")
+            axios.get("https://curnonwatch-api.herokuapp.com/api/product/Nam/sortByAlphabet/-1")
                 .then(data => {
                     this.setState({
                         products: data.data.data,
@@ -54,7 +54,7 @@ export default class Man extends Component {
 
 
         if (this.state.sortOption === 3) {
-            axios.get("http://curnonwatch-api.herokuapp.com/api/product/Nam/sortByPrice/1")
+            axios.get("https://curnonwatch-api.herokuapp.com/api/product/Nam/sortByPrice/1")
                 .then(data => {
                     this.setState({
                         products: data.data.data,
@@ -62,7 +62,7 @@ export default class Man extends Component {
                 }).catch(err => console.log(err));
         }
         if (this.state.sortOption === 4) {
-            axios.get("http://curnonwatch-api.herokuapp.com/api/product/Nam/sortByPrice/-1")
+            axios.get("https://curnonwatch-api.herokuapp.com/api/product/Nam/sortByPrice/-1")
                 .then(data => {
                     this.setState({
                         products: data.data.data,

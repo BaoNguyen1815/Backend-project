@@ -11,7 +11,7 @@ export default class Header extends Component {
     componentDidMount() {
         // Check login
         const access_token = window.localStorage.getItem("access_token");
-        axios.get("http://curnonwatch-api.herokuapp.com/api/auth/check?access_token=" + access_token)
+        axios.get("https://curnonwatch-api.herokuapp.com/api/auth/check?access_token=" + access_token)
             .then(response => {
                 console.log(response);
                 if (response.data.success) {

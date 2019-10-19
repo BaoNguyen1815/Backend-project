@@ -16,7 +16,7 @@ export default class Table extends Component {
     submitData = () => {
         axios({
             method: 'post',
-            url: 'http://curnonwatch-api.herokuapp.com/api/bill',
+            url: 'https://curnonwatch-api.herokuapp.com/api/bill',
             data: {
                 list_product: JSON.parse(localStorage.getItem("cartcurnor")),
                 user: this.props.id,

@@ -24,7 +24,7 @@ class ProductDetail extends Component {
         console.log("Hello");
         //const access_token = window.localStorage.getItem("access_token");
         const id = this.props.match.params.id;
-        axios.get(`http://curnonwatch-api.herokuapp.com/api/product/${id}`)
+        axios.get(`https://curnonwatch-api.herokuapp.com/api/product/${id}`)
             .then(response => {
                 if (response.data.success) {
                     console.log(response.data.data);
@@ -40,7 +40,7 @@ class ProductDetail extends Component {
 
             });
 
-        axios.get(`http://curnonwatch-api.herokuapp.com/api/comment/${id}`)
+        axios.get(`https://curnonwatch-api.herokuapp.com/api/comment/${id}`)
             .then(response => {
                 if (response.data.success) {
                     console.log(response.data.data);
