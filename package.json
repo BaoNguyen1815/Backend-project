@@ -12,7 +12,7 @@
     "react-scripts": "3.1.2"
   },
   "scripts": {
-    "start": "SET REACT_APP_STATE=localhost && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
