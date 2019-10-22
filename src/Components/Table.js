@@ -51,6 +51,17 @@ export default class Table extends Component {
         return result;
     }
 
+    handleChange = event => {
+        event.preventDefault();
+        const data = JSON.parse(localStorage.getItem("cartcurnor"));
+        const index = event.target.id;
+        const value = event.target.value;
+        data[index].quantity = value;
+        localStorage.setItem("cartcurnor", JSON.stringify(data));
+        this.setState({ list_item: data });
+    }
+
+
     renderTable = () => {
         const data = JSON.parse(localStorage.getItem("cartcurnor"));
         if (data) {
@@ -59,7 +70,7 @@ export default class Table extends Component {
                     <tr key={index}>
                         <th><img className="tbl_img" src={item.item.image[0]} /><p className="name">{item.item.title}</p></th>
                         <td><p>{item.item.price.toLocaleString("vi")}</p></td>
-                        <td><input type="number" className="number" name="number" defaultValue={item.quantity} /></td>
+                        <td><input type="number" className="number" name="number" id={index} onChange={this.handleChange} defaultValue={item.quantity} /></td>
                         <td>{(item.item.price * item.quantity).toLocaleString("vi")}</td>
                         <td><button onClick={() => this.delete(item.item._id)} type="button" className="btn btn-light">Xóa</button></td>
                     </tr>

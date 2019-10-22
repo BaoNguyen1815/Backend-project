@@ -9,15 +9,15 @@ export default class ManProductImage extends Component {
         quantityBuy: 1,
     }
     getData = () => {
-        alert("Sản phẩm đã được thêm vào giỏ hàng");
+
         if (localStorage.cartcurnor) {
             let list_item = JSON.parse(localStorage.getItem("cartcurnor"));
             let checkAddItem = false;
             for (let item of list_item) {
                 //
-                if (item.item._id == this.state.productBuy._id) {
+                if (item.item._id === this.state.productBuy._id) {
                     this.setState({ quantityBuy: item.quantity + 1 })
-                    list_item.splice(list_item.indexOf(item, 1));
+                    list_item.splice(list_item.indexOf(item), 1);
                     break;
                 }
             }
@@ -43,6 +43,7 @@ export default class ManProductImage extends Component {
 
             localStorage.setItem('cartcurnor', data_product);
         }
+        alert("Sản phẩm đã được thêm vào giỏ hàng");
     }
 
     render() {

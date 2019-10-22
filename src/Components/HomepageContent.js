@@ -105,7 +105,7 @@ export default function HomepageContent() {
                             <div className="showcase-grid-item-post-media wrap">
                                 <img src="https://showcase-media.s3.us-west-2.amazonaws.com/production-2603178-1895479236078869986_3286087044-images-index-2-type-standard_resolution-640-640.jpg" alt="" />
                                 <div className="content-hide">
-                                    <h1 className="icon-hide"> aaa </h1>
+                                    <h1 className="icon-hide"> Visit us </h1>
                                 </div>
                             </div>
                         </div>
