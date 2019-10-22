@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Header from '../style/header.css'
 export default function Footer() {
     return (
-        <div className="container-fluid text-center text-md-left">
+        <div className="container-fluid text-center text-md-left" id="footer">
             <div className="row">
                 <div className="col-md-6 mt-md-0 mt-3">
                     <h5 className="text-uppercase">Địa chỉ của cửa hàng</h5>
@@ -25,7 +25,7 @@ export default function Footer() {
                 </div>
             </div >
 
-            <hr/>
+            <hr />
 
             <div className="footer-copyright text-center py-3">© 2019 Curnon:
                 <a href="https://https://curnonwatch.com/"> Curnon Watch</a>
